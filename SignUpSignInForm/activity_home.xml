@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/homePageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Page"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profile_img"
+        android:id="@+id/profileImgHome"
+        app:layout_constraintTop_toBottomOf="@id/homePageTV"
+        app:layout_constraintStart_toStartOf="@id/homePageTV"
+        app:layout_constraintEnd_toEndOf="@id/homePageTV"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/roundedImage"
+        app:strokeWidth="10dp"
+        android:padding="15dp"
+        app:strokeColor="#131313"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:text="Username : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/profileImgHome"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeNameTV"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/username"
+        android:text="MD. Rakibul"
+        app:layout_constraintTop_toTopOf="@id/username"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/useremail"
+        android:text="E-mail : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeEmailTV"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/useremail"
+        android:text="rakibul@gmail.com"
+        app:layout_constraintTop_toTopOf="@id/useremail"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userpassword"
+        android:text="Password : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/homeEmailTV"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homePasswordTV"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/userpassword"
+        android:text="12345678"
+        app:layout_constraintTop_toTopOf="@id/userpassword"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userage"
+        android:text="Age : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/homePasswordTV"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeAgeTV"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/userage"
+        android:text="24"
+        app:layout_constraintTop_toTopOf="@id/userage"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/useraddress"
+        android:text="Address : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/homeAgeTV"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeAddressTV"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/useraddress"
+        android:text="KamrangirChar,Dhaka,Bangladesh "
+        app:layout_constraintTop_toTopOf="@id/useraddress"
+        android:layout_marginStart="10dp"
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
